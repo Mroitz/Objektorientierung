@@ -1,9 +1,10 @@
-package Kamera;
+package at.bra.objektorientierung;
 
 public class Picture {
     private int id;
 
     public int getId() {
-        return id;
+        return this.id;
     }
+
 }
