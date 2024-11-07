@@ -9,7 +9,7 @@ public class Picture {
     private double size;
 
     public Picture(String name, Date date, double size) {
-        // Konstruktor
+
     }
 
     public int getId() {
@@ -28,5 +28,4 @@ public class Picture {
     public double getSize() {
         return size;
     }
-
 }
