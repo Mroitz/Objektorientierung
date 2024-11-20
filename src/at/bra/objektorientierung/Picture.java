@@ -1,22 +1,20 @@
 package at.bra.objektorientierung;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class Picture {
-    private int id;
     private String name;
-    private Date date;
-    private double size;
+    private LocalDate date;
+    private int size;
 
-    public Picture(String name, Date date, double size) {
-
+    public Picture(String name, LocalDate date, int size) {
+        this.name = name;
+        this.date = date;
+        this.size = size;
     }
 
-    public int getId() {
-        return this.id;
-    }
-
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 

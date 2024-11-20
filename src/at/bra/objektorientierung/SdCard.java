@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SdCard {
-    private double capacity;
+    private int capacity;
     private List<Picture> pictures;
 
-    public SdCard(double capacity) {
+    public SdCard(int capacity) {
         this.capacity = capacity;
         this.pictures = new ArrayList<>();
     }
 
-    public double getCapacity() {
+    public int getCapacity() {
         return capacity;
     }
 }
