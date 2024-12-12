@@ -1,15 +1,17 @@
 package at.bra.algodat;
 
-import at.bra.algodat.datagenerator.DataGenerator;
+import at.bra.algodat.sorter.BubbleSorter;
+import at.bra.algodat.sorter.InserionSorter;
+import at.bra.algodat.sorter.SelectionSorter;
 
 public class Main {
     public static void main(String[] args) {
-        DataGenerator generator = new DataGenerator();
 
-        System.out.println("Original Array:");
-        int[] numbers = generator.generateDataArray(9, 1, 100);
-        generator.printArray(numbers);
-
-        // TEst
+        Controller controller = new Controller();
+        controller.addSorter(new BubbleSorter());
+        controller.addSorter(new InserionSorter());
+        controller.addSorter(new SelectionSorter());
+        controller.run();
     }
+
 }
