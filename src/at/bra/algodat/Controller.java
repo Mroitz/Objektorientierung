@@ -36,11 +36,11 @@ public class Controller {
                     generateDataArray();
                     break;
                 case 2:
-                    System.out.println("choose algo");
+                    System.out.println("choose algo(1,2,3)");
                     int chosen = scanner.nextInt();
                     switch (chosen) {
                         case 1:
-                            BubbleSorter.sort(dataArray);
+
                             break;
 
                         default:
